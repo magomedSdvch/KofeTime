@@ -1,4 +1,73 @@
-.z1{
-    text-align: center;
-    background-color: antiquewhite;
+body{
+    background-color: #121212;
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+      ),
+      url('./11.jpg'); /* Замени на путь к картинке */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+.m1 ul {
+    display: flex;              /* Горизонтальное расположение пунктов */
+    list-style: none;           /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+    align-items: center;        /* Выравнивание по вертикали */
+  }
+  
+  .m1 li {
+    margin-right: 1.5rem;       /* Отступ между пунктами */
+    padding: 10px;   /*сделал я*/
+    margin: 15px;
+
+  }
+  
+  .m1 li.right {
+    margin-left: auto;          /* 🤯 Вот здесь магия */
+  }
+  
+.m1 a{
+    color: #f5f5f5;
+}
+
+.m2{
+    height: 100vh; /* чтобы занять всю высоту экрана */
+    display: flex;
+    justify-content: center; /* по горизонтали */
+    align-items: center;     /* по вертикали */
+    flex-direction: column;  /* чтобы текст был один под другим */
+    text-align: center;
+}
+
+.br{
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 62px;
+    margin-bottom: 20px;
+}
+.opis{
+    color: gray;
+    text-align: center;
+    margin-top: 0;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between; /* Распределяем элементы по краям */
+    align-items: center; /* Выравниваем по вертикали */
+  }
+  
+  .address {
+    margin-right: 20px; /* Опционально, добавляем отступ справа */
+    color: gray;
+  }
+  
+  .phone {
+    text-align: right; /* Выравниваем телефон по правому краю */
+    color: gray;
+  }
+  
